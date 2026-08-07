@@ -109,18 +109,6 @@ export default function LocationPickerModal({
                       <span className="loc-card__name">
                         {location.post_title}
                       </span>
-                      <span className="loc-card__place">
-                        {[location.acf.address_suburb, location.acf.address_state]
-                          .filter(Boolean)
-                          /* most venues are named after their suburb — no point
-                             printing "EAST PERTH / EAST PERTH, WA" */
-                          .filter(
-                            (part) =>
-                              part.toLowerCase() !==
-                              location.post_title.toLowerCase()
-                          )
-                          .join(", ")}
-                      </span>
                       <span className="loc-card__cta">
                         {soon ? "OPENING SOON" : `${ctaLabel} →`}
                       </span>
