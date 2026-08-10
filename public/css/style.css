@@ -6569,7 +6569,7 @@ label.label-option{
      ~1.4em tall, text nearly filling it */
   /* uneven on purpose: the caps sit high in the line box, so these numbers
      put equal ink-to-border space above and below (measured, ~15px each) */
-  padding: .3em .7em .28em !important;
+  padding: .40em .7em .43em !important;
   width: auto !important;
   /* em-based, so both pills stay the width of the longer label (BOOK A TABLE)
      at every font size */
@@ -6577,13 +6577,15 @@ label.label-option{
   margin: 0 !important;
   /* the 22px floor keeps the pills readable on the 768-991px band, where
      1.8vw alone would drop them to ~14px */
-  font-size: clamp(20px, 1.7vw, 30px) !important;
+  font-size: clamp(15px, 1.15vw, 22px) !important;
   line-height: 1 !important;
-  letter-spacing: .06em;
+  letter-spacing: .05em;
   /* Headline has no lighter cut, so thin it optically: grayscale smoothing
      plus no glow, both of which were fattening the strokes at 40px */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* same face as the navbar items (.menu .menu__item) */
+  font-family: 'Patrima Bold';
   border: 2px solid #fff !important;
   border-radius: 60px !important;
   transform: none !important;
@@ -6595,11 +6597,11 @@ label.label-option{
   background: transparent !important;
 }
 
-/* same hover as the header .quick_btn / .blockbtn: white on brand red */
+/* same hover as the navbar links: gold text, nothing fills */
 #carousel .coach .hero-cta:hover {
-  color: #fff !important;
-  background: #d61e25 !important;
-  border-color: #d61e25 !important;
+  color: #c2a35c !important;
+  background: transparent !important;
+  border-color: #c2a35c !important;
   text-shadow: none;
 }
 

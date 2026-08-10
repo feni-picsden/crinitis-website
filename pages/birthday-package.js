@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Image from "next/image";
 import Header from "/components/header/header";
 import Footer from "/components/Footer/Footer";
 import PageTitle from "../components/header/PageTitle";
@@ -8,7 +7,6 @@ import SEOHeader from "../components/Common/SEOHeader";
 
 export default function BirthdayPackage(props) {
   const { page } = props;
-  const { fillable } = true;
 
   return (
     <>
@@ -48,19 +46,6 @@ export default function BirthdayPackage(props) {
                 <Link legacyBehavior href="/reservation">
                   <a className="blockbtn bgblack space20">BOOK NOW</a>
                 </Link>
-              </div>
-
-              <div className="wt_bx grid_bx trans mt-4">
-                <div className="wt_img overflow-hidden">
-                  <Image
-                    src="/img/birthday-pkg.jpg"
-                    className="img-fluid trans object-cover"
-                    width={358}
-                    height={358}
-                    fill={fillable ? 1 : 0}
-                    alt="Birthday Package"
-                  />
-                </div>
               </div>
             </div>
           </div>
