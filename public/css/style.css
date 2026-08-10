@@ -6579,7 +6579,7 @@ label.label-option{
      1.8vw alone would drop them to ~14px */
   font-size: clamp(15px, 1.15vw, 22px) !important;
   line-height: 1 !important;
-  letter-spacing: .05em;
+  letter-spacing: .02em;
   /* Headline has no lighter cut, so thin it optically: grayscale smoothing
      plus no glow, both of which were fattening the strokes at 40px */
   -webkit-font-smoothing: antialiased;
