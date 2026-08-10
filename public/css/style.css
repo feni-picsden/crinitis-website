@@ -6569,7 +6569,7 @@ label.label-option{
      ~1.4em tall, text nearly filling it */
   /* uneven on purpose: the caps sit high in the line box, so these numbers
      put equal ink-to-border space above and below (measured, ~15px each) */
-  padding: .14em .7em .12em !important;
+  padding: .3em .7em .28em !important;
   width: auto !important;
   /* em-based, so both pills stay the width of the longer label (BOOK A TABLE)
      at every font size */
@@ -6577,7 +6577,7 @@ label.label-option{
   margin: 0 !important;
   /* the 22px floor keeps the pills readable on the 768-991px band, where
      1.8vw alone would drop them to ~14px */
-  font-size: clamp(22px, 1.8vw, 32px) !important;
+  font-size: clamp(20px, 1.7vw, 30px) !important;
   line-height: 1 !important;
   letter-spacing: .06em;
   /* Headline has no lighter cut, so thin it optically: grayscale smoothing
