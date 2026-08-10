@@ -43,16 +43,16 @@ export default function Welcome({ locations = [] }) {
                   <button
                     type="button"
                     className="blockbtn hero-cta"
-                    onClick={() => setPicker('order')}
+                    onClick={() => setPicker('book')}
                   >
-                    ORDER NOW
+                    BOOK A TABLE
                   </button>
                   <button
                     type="button"
                     className="blockbtn hero-cta"
-                    onClick={() => setPicker('book')}
+                    onClick={() => setPicker('order')}
                   >
-                    BOOK A TABLE
+                    PICK UP
                   </button>
                 </div>
               </div>
@@ -77,7 +77,7 @@ export default function Welcome({ locations = [] }) {
         onClose={() => setPicker(null)}
         title="ORDER ONLINE"
         subtitle="Select your preferred restaurant to start your order."
-        ctaLabel="ORDER NOW"
+        ctaLabel="PICK UP"
         locations={locations}
         urlKey="order_now_url"
       />

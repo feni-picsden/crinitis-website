@@ -6587,7 +6587,7 @@ label.label-option{
   border: 2px solid #fff !important;
   border-radius: 60px !important;
   transform: none !important;
-  transition: background-color .25s ease, color .25s ease;
+  transition: background-color .25s ease, color .25s ease, border-color .25s ease;
 }
 
 #carousel .coach .hero-cta {
@@ -6595,9 +6595,11 @@ label.label-option{
   background: transparent !important;
 }
 
+/* same hover as the header .quick_btn / .blockbtn: white on brand red */
 #carousel .coach .hero-cta:hover {
-  color: #1b1b1b !important;
-  background: #fff !important;
+  color: #fff !important;
+  background: #d61e25 !important;
+  border-color: #d61e25 !important;
   text-shadow: none;
 }
 

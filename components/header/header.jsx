@@ -196,7 +196,7 @@ export default function Header() {
                     <li>
                       <Link legacyBehavior href="/order-online">
                         <a className="quick_btn">
-                          <span className="text">ORDER NOW</span>
+                          <span className="text">PICK UP</span>
                         </a>
                       </Link>
                     </li>

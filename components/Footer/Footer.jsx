@@ -1,6 +1,5 @@
 import Link from "next/link";
 import SocialLinks from "/components/Footer/SocialLinks";
-import LiveChat from "/components/Common/LiveChat";
 
 import { useRouter } from "next/router";
 
@@ -183,7 +182,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <LiveChat />
+      {/* chat/enquiry widget hidden — put <LiveChat /> back to restore it */}
     </footer>
   );
 }
